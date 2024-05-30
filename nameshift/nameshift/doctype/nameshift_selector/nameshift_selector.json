@@ -1,34 +1,27 @@
 {
-  "doctype": "NameShift Selector",
+  "doctype": "DocType",
+  "name": "NameShift Selector",
+  "module": "NameShift",
+  "custom": 1,
   "fields": [
     {
-      "label": "App",
-      "fieldname": "app",
-      "fieldtype": "Select",
-      "options": "\nERPNext\nHRM\nYourApp"
+      "label": "Select DocType",
+      "fieldname": "select_doctype",
+      "fieldtype": "Link",
+      "options": "DocType",
+      "reqd": 1
     },
     {
-      "label": "DocType",
-      "fieldname": "doctype",
-      "fieldtype": "Select",
-      "depends_on": "eval:doc.app"
+      "label": "Select Field",
+      "fieldname": "select_field",
+      "fieldtype": "Data",
+      "reqd": 1
     },
     {
-      "label": "Field",
-      "fieldname": "field",
-      "fieldtype": "Select",
-      "depends_on": "eval:doc.doctype"
-    },
-    {
-      "label": "New Label",
-      "fieldname": "new_label",
-      "fieldtype": "Data"
-    }
-  ],
-  "permissions": [
-    {
-      "role": "System Manager"
+      "label": "New Field Name",
+      "fieldname": "new_field_name",
+      "fieldtype": "Data",
+      "reqd": 1
     }
   ]
 }
-
