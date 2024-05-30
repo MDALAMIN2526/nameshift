@@ -1,4 +1,4 @@
-frappe.ui.form.on('DocType Selector', {
+frappe.ui.form.on('NameShift Selector', {
     app: function(frm) {
         // Fetch DocTypes for the selected app
         frappe.call({
