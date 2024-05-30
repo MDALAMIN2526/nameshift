@@ -228,6 +228,6 @@ app_license = "mit"
 # }
 
 doctype_js = {
-    "DocType Selector": "nameshift/nameshift/doctype/doctype_selector/doctype_selector.js"
+    "DocType Selector": "nameshift/nameshift/doctype/nameshift_selector/nameshift_selector.js"
 }
 

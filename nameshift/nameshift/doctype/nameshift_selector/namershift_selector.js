@@ -2,7 +2,7 @@ frappe.ui.form.on('DocType Selector', {
     app: function(frm) {
         // Fetch DocTypes for the selected app
         frappe.call({
-            method: 'nameshift.nameshift.doctype.doctype_selector.doctype_selector.get_doctypes',
+            method: 'nameshift.nameshift.doctype.nameshift_selector.nameshift_selector.get_doctypes',
             args: {
                 app: frm.doc.app
             },
@@ -16,7 +16,7 @@ frappe.ui.form.on('DocType Selector', {
     doctype: function(frm) {
         // Fetch fields for the selected DocType
         frappe.call({
-            method: 'nameshift.nameshift.doctype.doctype_selector.doctype_selector.get_fields',
+            method: 'nameshift.nameshift.doctype.nameshift_selector.nameshift_selector.get_fields',
             args: {
                 doctype: frm.doc.doctype
             },
