@@ -1,0 +1,34 @@
+{
+  "doctype": "DocType Selector",
+  "fields": [
+    {
+      "label": "App",
+      "fieldname": "app",
+      "fieldtype": "Select",
+      "options": "\nERPNext\nHRM\nYourApp"
+    },
+    {
+      "label": "DocType",
+      "fieldname": "doctype",
+      "fieldtype": "Select",
+      "depends_on": "eval:doc.app"
+    },
+    {
+      "label": "Field",
+      "fieldname": "field",
+      "fieldtype": "Select",
+      "depends_on": "eval:doc.doctype"
+    },
+    {
+      "label": "New Label",
+      "fieldname": "new_label",
+      "fieldtype": "Data"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager"
+    }
+  ]
+}
+

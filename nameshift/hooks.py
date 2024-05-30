@@ -227,3 +227,7 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doctype_js = {
+    "DocType Selector": "nameshift/nameshift/doctype/doctype_selector/doctype_selector.js"
+}
+
